@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Delta</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link href="./sweet/sweet.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+    <script src="./javascript/index.js"></script>
+    <link rel="shortcut icon" href="./src/delta.ico" />
+    <meta property="og:title" content="Delta Website" />
+    <meta
+      property="og:description"
+      content="❤️ ・ Olá! eu sou a Delta, um bot multifuncional para o Discord. Estou aqui para te ajudar em seu servidor."
+    />
+    <meta
+      property="og:image"
+      content="https://i.imgur.com/R9Zmeuh.png"
+    />
+    <meta name="theme-color" content="#ca2d2e" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body oncontextmenu="return false">
+    <script>
+      loading()
+    </script>
+    <div onclick="myFun()">
+      <img id="lamp" draggable="false" src="src/lampadadark.png" />
+    </div>
+
+    <div class="menu">
+      <a href="index.html" class="menutext">Home</a>
+      <a
+        href="https://discord.com/oauth2/authorize?client_id=807336842894376961&permissions=8&scope=bot"
+        target="_blank"
+        class="menutext"
+        >Invite</a
+      >
+      <a href="commands.html" class="menutext">Comandos</a>
+      <a href="support.html" class="menutext">Suporte</a>
+    </div>
+    <section class="container-sup">
+        <div class="container-box-sup disco">
+          <h1>▸ Servidor de Suporte</h1>
+          <h4>
+            Você pode entrar no servidor de suporte para obter ajuda, suas dúvidas
+            podem ser tiradas lá em apenas alguns minutos! Tá esperando o quê para
+            entrar?
+          </h4>
+          <a
+            href="https://discord.gg/kGffCp7uxy"
+            target="_blank"
+            style="text-decoration: none"
+            >Clique Aqui</a
+          >
+        </div>
+        <div class="container-box-sup gmail">
+          <h1>▸ Suporte pelo Email</h1>
+          <h4>
+            Caso você queria uma alternativa ao servidor de suporte você pode nos
+            enviar um e-mail! (respondemos em até 3 dias úteis)
+          </h4>
+  
+          <form
+            action="https://api.staticforms.xyz/submit"
+            method="post"
+            id="myForm"
+          >
+            <input
+              type="hidden"
+              name="accessKey"
+              value="4b5e366a-21c0-403a-bb9c-e3db85623944"
+            />
+            <input type="text" name="name" style="display: none" />
+            <a class="gmailtext" style="opacity: 1 !important">sua Discord Tag</a>
+            <input
+              id="validar"
+              style="text-align: center"
+              class="gmail-box"
+              type="text"
+              name="$Tag do Discord:<br>"
+              maxlength="26"
+            />
+            <a class="gmailtext" style="opacity: 1 !important">Mensagem</a>
+            <textarea
+              id="validado"
+              class="gmail-box message-box"
+              type="text"
+              name="$<br>Mensagem:<br>"
+            ></textarea>
+            <input type="hidden" name="redirectTo" value="">
+            <input
+              id="send"
+              type="submit"
+              value="Enviar"
+              onclick="return checkForm()"
+            />
+          </form>
+        </div>
+      </section>
+    <footer id="footersol">
+      <a href="tos.html" id="fontfooter"
+        >Copyright © 2021 Delta - Todos os direitos reservados ・
+        <u>Termos de Uso e Privacidade</u></a
+      >
+    </footer>
+  </body>
+</html>
