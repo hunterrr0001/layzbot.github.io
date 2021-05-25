@@ -612,3 +612,12 @@ function balanc() {
     "info"
   );
 }
+
+function aboutme() {
+  Swal.fire(
+    "Aboutme",
+    "Altera a mensagem do seu Perfil<br><br>Uso: <strong>=aboutme [mensagem]</strong>",
+    "info"
+  );
+}
+
