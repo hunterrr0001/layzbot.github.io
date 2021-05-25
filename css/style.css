@@ -173,7 +173,7 @@ body {
   flex-direction: column;
   background: #222020;
   height: auto;
-  width: 24em;
+  width: 24em; /* 20 */
   margin: 2%;
   border-radius: 15px;
   color: whitesmoke;
@@ -217,7 +217,7 @@ form {
   color: rgba(0, 0, 0, 0.616);
   border-radius: 20px;
   border: #ca2d2e solid 2px;
-  padding: 3% 8%;
+  padding: 3% 8%; /* 3% 0% */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,7 +230,7 @@ form {
   padding: 8% 6%;
   resize: none;
   overflow: hidden;
-  width: 20em;
+  width: 20em; /* 16em */
   color: rgba(0, 0, 0, 0.616);
   box-shadow: 0 0 0 0;
   outline: 0;
@@ -375,7 +375,7 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 600px) {
   .menutext {
-    font-size: 25px;
+    font-size: 17px;
   }
 
   .container-block {
@@ -403,6 +403,43 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     box-shadow: #ca2d2e 4px 3px 4px;
+  }
+  
+  .container-box-sup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #222020;
+    height: auto;
+    width: 24em; /* 20 */
+    margin: 2%;
+    border-radius: 15px;
+    color: whitesmoke;
+  }
+  
+  .gmail-box {
+    background-color: whitesmoke;
+    color: rgba(0, 0, 0, 0.616);
+    border-radius: 20px;
+    border: #ca2d2e solid 2px;
+    padding: 3% 0%; /* 3% 0% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+  
+  .message-box {
+    display: flex;
+    padding: 8% 6%;
+    resize: none;
+    overflow: hidden;
+    width: 16em; /* 16em */
+    color: rgba(0, 0, 0, 0.616);
+    box-shadow: 0 0 0 0;
+    outline: 0;
   }
 }
 
