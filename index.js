@@ -154,7 +154,7 @@ function press(id) {
     element.innerHTML = "=work";
   } else if (id == "jobs") {
     element.innerHTML = "=jobs";
-  } else if (id == "bal") {
+  } else if (id == "balance") {
     element.innerHTML = "=bal [@membro]";
   } else if (id == "lb") {
     element.innerHTML = "=lb";
