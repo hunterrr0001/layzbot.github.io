@@ -131,7 +131,7 @@ function press(id) {
   } else if (id == "servericon") {
     element.innerHTML = "=servericon [serverID]";
   } else if (id == "traduzir") {
-    element.innerHTML = "=traduzir &lt;mensagem&gt;";
+    element.innerHTML = "=traduzir &lt;idioma&gt; &lt;mensagem&gt;";
   } else if (id == "afk") {
     element.innerHTML = "=afk [motivo]";
   } else if (id == "ticket") {
