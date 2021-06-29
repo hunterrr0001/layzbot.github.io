@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/delta-circle.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="./index.js"></script>
+    <title>Delta Website</title>
+  </head>
+  <body oncontextmenu="return false">
+    <nav>
+      <a class="text" href="./index.html">Delta</a>
+      <div class="menu" onclick="menu()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./invite.html">Invite</a></li>
+        <li><a href="./commands.html">Commands</a></li>
+        <li>
+          <a href="https://discord.gg/kGffCp7uxy" target="_blank">Support</a>
+        </li>
+        <li><a href="./friends.html">Friends</a></li>
+      </ul>
+    </nav>
+    <section class="container" style="flex-direction: column; height: 80%">
+      <div
+        class="container-auto"
+        style="flex-direction: row; flex-wrap: wrap; height: auto; margin: 1%"
+      >
+        <div class="container-icons">
+          <img class="logo-min" src="./assets/delta.ico" alt="delta icon" />
+          <div class="line"></div>
+          <h4>Delta</h4>
+          <button class="buttons-min">
+            <a
+              href="https://discord.com/api/oauth2/authorize?client_id=807336842894376961&permissions=8&scope=bot"
+              >invite</a
+            >
+          </button>
+        </div>
+        <div class="container-icons">
+          <img class="logo-min" src="./assets/prisma.ico" alt="prisma icon" />
+          <div class="line"></div>
+          <h4>Prisma (Requer permissão)</h4>
+          <button class="buttons-min">
+            <a
+              href="https://discord.com/api/oauth2/authorize?client_id=745082935929077841&permissions=8&scope=bot"
+              >invite</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="flex">
+        <h5>Todos os direitos reservados - Delta©</h5>
+      </div>
+    </footer>
+  </body>
+</html>

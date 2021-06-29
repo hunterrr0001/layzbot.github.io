@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/delta-circle.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="./index.js"></script>
+    <title>Delta Website</title>
+  </head>
+  <body oncontextmenu="return false">
+    <nav>
+      <a class="text" href="./index.html">Delta</a>
+      <div class="menu" onclick="menu()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./invite.html">Invite</a></li>
+        <li><a href="./commands.html">Commands</a></li>
+        <li>
+          <a href="https://discord.gg/kGffCp7uxy" target="_blank">Support</a>
+        </li>
+        <li><a href="./friends.html">Friends</a></li>
+      </ul>
+    </nav>
+    <section
+      class="container"
+      style="flex-direction: column; height: auto; margin: 3% 0% 3% 0%"
+    >
+      <!-- Mod -->
+      <h1>Moderação</h1>
+      <h6 style="margin-top: 1%; text-align: center">
+        Passe ou pressione o nome do comando para ver seu USO
+      </h6>
+      <table>
+        <tr>
+          <th><a>Comando</a></th>
+          <th><a>Info</a></th>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('ban')">Ban</a></td>
+          <td><a id="ban">Bane um membro do servidor</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('unban')">Unban</a></td>
+          <td><a id="unban">Desbane um membro do servidor</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('kick')">Kick</a></td>
+          <td><a id="kick">Chuta um membro do servidor</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('mute')">Mute</a></td>
+          <td><a id="mute">Silencia um membro do servidor</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('unmute')">Unmute</a></td>
+          <td><a id="unmute">Remove o silenciamento de um membro</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('lock')">Lock</a></td>
+          <td><a id="lock">Bloqueia um canal do servidor</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('unlock')">Unlock</a></td>
+          <td><a id="unlock">Desbloqueia um canal do servidor</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('clear')">Clear</a></td>
+          <td>
+            <a id="clear">Limpa uma quantidade de mensagens em um canal</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('say')">Say</a></td>
+          <td><a id="say">Me faça repetir algo</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('setprefix')">Setprefix</a></td>
+          <td><a id="setprefix">Altera o meu prefixo em um servidor</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('ticketmsg')">Ticket-msg</a></td>
+          <td>
+            <a id="ticketmsg"
+              >Permite alterar a mensagem exibida ao criar um ticket</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('nuke')">Nuke</a></td>
+          <td>
+            <a id="nuke">Bombardeia um canal, apagando tudo que ele possui</a>
+          </td>
+        </tr>
+      </table>
+      <!-- Informações -->
+      <h1 style="margin-top: 3%">Informação</h1>
+      <h6 style="margin-top: 1%; text-align: center">
+        Passe ou pressione o nome do comando para ver seu USO
+      </h6>
+      <table>
+        <tr>
+          <th><a>Comando</a></th>
+          <th><a>Info</a></th>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('userinfo')">Userinfo</a></td>
+          <td><a id="userinfo">Mostra as informações de um usuário</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('serverinfo')">Serverinfo</a></td>
+          <td><a id="serverinfo">Mostra as informações de um servidor</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('botinfo')">Botinfo</a></td>
+          <td><a id="botinfo">Mostra as informações da Delta</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('invite')">Invite</a></td>
+          <td><a id="invite">Exibe o link de invite da Delta</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('status')">Status</a></td>
+          <td>
+            <a id="status"
+              >Exibe o Ping, o consumo de RAM e a quantidade de shards</a
+            >
+          </td>
+        </tr>
+      </table>
+      <!-- Diversão -->
+      <h1 style="margin-top: 3%">Diversão</h1>
+      <h6 style="margin-top: 1%; text-align: center">
+        Passe ou pressione o nome do comando para ver seu USO
+      </h6>
+      <table>
+        <tr>
+          <th><a>Comando</a></th>
+          <th><a>Info</a></th>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('kiss')">Kiss</a></td>
+          <td><a id="kiss">Beije um usuário</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('slap')">Slap</a></td>
+          <td><a id="slap">Dê um tapa em alguém</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('hug')">Hug</a></td>
+          <td><a id="hug">Dê um abraço em alguém</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('tickle')">Tickle</a></td>
+          <td><a id="tickle">Faça alguém rir, nem que seja a força</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('poke')">Poke</a></td>
+          <td><a id="poke">Cutuque alguém</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('pat')">Pat</a></td>
+          <td><a id="pat">Faça cafuné em alguém</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('dance')">Dance</a></td>
+          <td><a id="dance">Dance com alguém</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('attack')">Attack</a></td>
+          <td><a id="attack">Ataque alguém no estilo pokémon</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('kill')">Kill</a></td>
+          <td><a id="kill">Atire em alguém</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('trump')">Trump</a></td>
+          <td><a id="trump">Faça um tweet utilizando a conta do trump</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('ball')">8ball</a></td>
+          <td>
+            <a id="ball">Faça uma pergunta e receba uma resposta aleatória</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('ascii')">Ascii</a></td>
+          <td><a id="ascii">Crie artes ASCII</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('coinflip')">Coinflip</a></td>
+          <td><a id="coinflip">O velho jogo de cara ou coroa</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('gay')">Gay</a></td>
+          <td><a id="gay">Veja o quanto você ou o seu amigo é gay</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('piada')">Piada</a></td>
+          <td><a id="piada">Veja piadas ruins</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('comunism')">Comunism</a></td>
+          <td><a id="comunism">Manipulação de Imagem, tente e descubra</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('invert')">Invert</a></td>
+          <td><a id="invert">Manipulação de Imagem, tente e descubra</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('delete')">Delete</a></td>
+          <td><a id="delete">Manipulação de Imagem, tente e descubra</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('pixel')">Pixel</a></td>
+          <td><a id="pixel">Manipulação de Imagem, tente e descubra</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('ship')">Ship</a></td>
+          <td><a id="ship">Veja as chances de um casal dar certo</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('randomcolor')">RandomColor</a></td>
+          <td><a id="randomcolor">Veja HEX de cores aleatórias</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('anime')">Anime</a></td>
+          <td><a id="anime">Veja as informações de um anime</a></td>
+        </tr>
+      </table>
+      <!-- Utilidade -->
+      <h1 style="margin-top: 3%">Utilidade</h1>
+      <h6 style="margin-top: 1%; text-align: center">
+        Passe ou pressione o nome do comando para ver seu USO
+      </h6>
+      <table>
+        <tr>
+          <th><a>Comando</a></th>
+          <th><a>Info</a></th>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('emoji')">Emoji</a></td>
+          <td><a id="emoji">Aumente os emojis de um servidor</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('emojify')">Emojify</a></td>
+          <td><a id="emojify">Transforme textos em emojis</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('avatar')">Avatar</a></td>
+          <td><a id="avatar">Exibe o avatar de um usuário</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('servericon')">Servericon</a></td>
+          <td><a id="servericon">Exibe a capa do servidor</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('traduzir')">Traduzir</a></td>
+          <td><a id="traduzir">Traduz um texto para vários idiomas</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('afk')">Afk</a></td>
+          <td>
+            <a id="afk"
+              >Ativa o modo AFK global, exibindo aos outros que você está
+              ausente</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('ticket')">Ticket</a></td>
+          <td>
+            <a id="ticket"
+              >Abre um ticket caso o servidor tenha um canal apropriado</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('encurtar')">Encurtar</a></td>
+          <td><a id="encurtar">Reduza alguns links</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('rules')">MakemyRules</a></td>
+          <td><a id="rules">Criação de regras rápidas e padrões</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('wiki')">Wiki</a></td>
+          <td><a id="wiki">Busque por algo no Wikipedia</a></td>
+        </tr>
+      </table>
+      <!-- Economia -->
+      <h1 style="margin-top: 3%">Economia & Social</h1>
+      <h6 style="margin-top: 1%; text-align: center">
+        Passe ou pressione o nome do comando para ver seu USO
+      </h6>
+      <table>
+        <tr>
+          <th><a>Comando</a></th>
+          <th><a>Info</a></th>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('profile')">Profile</a></td>
+          <td><a id="profile">Exibe a tela de algum perfil</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('aboutme')">Aboutme</a></td>
+          <td><a id="aboutme">Altera a mensagem do seu Perfil</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('rank')">Rank</a></td>
+          <td><a id="rank">Exibe uma tela com o seu level e seu XP</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('work')">Work</a></td>
+          <td><a id="work">Trabalhe para conseguir alguns Deltas</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('jobs')">Jobs</a></td>
+          <td>
+            <a id="jobs"
+              >Veja outros trabalhos para conseguir uma renda maior</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('balance')">Bal</a></td>
+          <td><a id="balance">Exibe seu saldo de Deltas</a></td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('lb')">Leaderboard</a></td>
+          <td>
+            <a id="lb"
+              >Exibe a lista dos Top 9 usuários mais ricos no sistema</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><a onmouseover="press('levels')">Levels</a></td>
+          <td>
+            <a id="levels"
+              >Exibe a lista dos Top 6 usuários com mais XP no sistema</a
+            >
+          </td>
+        </tr>
+      </table>
+    </section>
+    <footer>
+      <div class="flex">
+        <h5>Todos os direitos reservados - Delta©</h5>
+      </div>
+    </footer>
+  </body>
+</html>
