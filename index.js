@@ -56,10 +56,10 @@ function press(id) {
     element.innerHTML = "=clear <2 - 100>";
   } else if (id == "say") {
     element.innerHTML = "=say &lt;mensagem&gt;";
-  } else if (id == "setprefix") {
-    element.innerHTML = "=setprefix &lt;prefix&gt;";
-  } else if (id == "ticketmsg") {
-    element.innerHTML = "=ticket-msg &lt;mensagem&gt;";
+  } else if (id == "painel") {
+    element.innerHTML = "=painel";
+  } else if (id == "personalize") {
+    element.innerHTML = "=personalize";
   } else if (id == "nuke") {
     element.innerHTML = "=nuke <#chat-geral>";
 
@@ -132,8 +132,6 @@ function press(id) {
     element.innerHTML = "=servericon [serverID]";
   } else if (id == "traduzir") {
     element.innerHTML = "=traduzir &lt;idioma&gt; &lt;mensagem&gt;";
-  } else if (id == "afk") {
-    element.innerHTML = "=afk [motivo]";
   } else if (id == "ticket") {
     element.innerHTML = "=ticket";
   } else if (id == "encurtar") {
@@ -160,6 +158,8 @@ function press(id) {
     element.innerHTML = "=lb";
   } else if (id == "levels") {
     element.innerHTML = "=levels";
+  } else if (id == "apostar") {
+    element.innerHTML = "=apostar &lt;@user&gt; v&lt;valor&gt;";
   }
 
   setTimeout(() => {
