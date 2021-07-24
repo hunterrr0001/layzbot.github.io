@@ -160,6 +160,24 @@ function press(id) {
     element.innerHTML = "=levels";
   } else if (id == "apostar") {
     element.innerHTML = "=apostar &lt;@user&gt; v&lt;valor&gt;";
+  
+  // Música
+  } else if (id == "play") {
+    element.innerHTML = "=play [nome da música / URL]";
+  } else if (id == "stop") {
+    element.innerHTML = "=stop";
+  } else if (id == "skip") {
+    element.innerHTML = "=skip";
+  } else if (id == "pause") {
+    element.innerHTML = "=pause";
+  } else if (id == "resume") {
+    element.innerHTML = "=resume";
+  } else if (id == "queue") {
+    element.innerHTML = "=queue [número da página]";
+  } else if (id == "volume") {
+    element.innerHTML = "=volume [volume (numérico)]";
+  } else if (id == "loop") {
+    element.innerHTML = "=loop";
   }
 
   setTimeout(() => {
