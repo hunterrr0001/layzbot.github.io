@@ -31,7 +31,7 @@ nav {
   align-items: center;
   justify-content: space-around;
 
-  background-color: rgb(93, 141, 193);
+  background-color: #448D4C;
 }
 
 a {
@@ -149,7 +149,7 @@ table tr td a {
   border-radius: 5px;
   margin-left: 3%;
 
-  color: rgb(93, 141, 193);
+  color: #448D4C;
   background-color: #353535;
 }
 
@@ -166,7 +166,7 @@ div.container-icons {
   flex-direction: column;
 
   border-radius: 5px;
-  background-color: rgba(93, 141, 193, 0.849);
+  background-color: rgba(68, 141, 76, 0.85);
 }
 
 div.container-icons div.line {
@@ -192,7 +192,7 @@ div.container-icons h4 {
   border: none;
   color: #161616;
   font-size: 1.3rem;
-  background-color: rgb(93, 141, 193);
+  background-color: #448D4C;
   box-shadow: #161616 10px 10px 10px;
 }
 
@@ -206,7 +206,7 @@ div.container-icons h4 {
   border: 2px solid #161616;
   color: #161616;
   font-size: 1rem;
-  background-color: rgb(93, 141, 193);
+  background-color: #448D4C;
 }
 
 .buttons:hover {
@@ -274,7 +274,7 @@ footer {
   height: 12vh;
   font-size: 18px;
 
-  background-color: rgb(93, 141, 193);
+  background-color: #448D4C;
 }
 
 /* KEYFRAME */
