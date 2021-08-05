@@ -150,14 +150,18 @@ function press(id) {
     element.innerHTML = "=rank [@membro]";
   } else if (id == "work") {
     element.innerHTML = "=work";
-  } else if (id == "jobs") {
-    element.innerHTML = "=jobs";
   } else if (id == "balance") {
     element.innerHTML = "=bal [@membro]";
   } else if (id == "lb") {
-    element.innerHTML = "=lb";
-  } else if (id == "levels") {
-    element.innerHTML = "=levels";
+    element.innerHTML = "=lb [money/xp]";
+  } else if (id == "use") {
+    element.innerHTML = "=use -w [ID do wallpaper]";
+  } else if (id == "marry") {
+    element.innerHTML = "=marry [@usuario]";
+  } else if (id == "divorce") {
+    element.innerHTML = "=divorce";
+  } else if (id == "pay") {
+    element.innerHTML = "=pay [@usuario] [valor]";
   } else if (id == "apostar") {
     element.innerHTML = "=apostar &lt;@user&gt; v&lt;valor&gt;";
   
@@ -173,11 +177,15 @@ function press(id) {
   } else if (id == "resume") {
     element.innerHTML = "=resume";
   } else if (id == "queue") {
-    element.innerHTML = "=queue [número da página]";
+    element.innerHTML = "=queue";
   } else if (id == "volume") {
     element.innerHTML = "=volume [volume (numérico)]";
   } else if (id == "loop") {
     element.innerHTML = "=loop";
+  } else if (id == "unloop") {
+    element.innerHTML = "=unloop";
+  } else if (id == "remove") {
+    element.innerHTML = "=remove";
   }
 
   setTimeout(() => {
