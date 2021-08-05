@@ -162,6 +162,10 @@ function press(id) {
     element.innerHTML = "=divorce";
   } else if (id == "pay") {
     element.innerHTML = "=pay [@usuario] [valor]";
+  } else if (id == "wallpapers") {
+    element.innerHTML = "=wallpapers";
+  } else if (id == "shop") {
+    element.innerHTML = "=shop {buy} {id}";
   } else if (id == "apostar") {
     element.innerHTML = "=apostar &lt;@user&gt; v&lt;valor&gt;";
   
