@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/node-fetch@2.6.1/browser.js"></script>
     <link
       rel="shortcut icon"
       href="./assets/delta-circle.ico"
@@ -13,11 +12,6 @@
     <link rel="stylesheet" href="./css/index.css" />
     <script src="./js/index.js"></script>
     <title>Delta Website</title>
-    <script>
-      fetch('https://deltawebhooksend.henriquelimao20.repl.co/deltaapi')
-        .then(res => res.json())
-         .then(json => console.log(json));
-    </script>
   </head>
   <body oncontextmenu="return false">
     <nav>
@@ -55,10 +49,10 @@
     >
       <div class="container-auto" style="flex-direction: row; flex-wrap: wrap">
         <div class="container-icons">
-          <h2>Servidores</h2>
+          <h2>Ping</h2>
           <div class="line"></div>
-          <h4 id="loadServers">
-            Carregando...
+          <h4>
+            A Delta é um bot instável, com uma latência máxima de 25ms, perfeita para te auxiliar.
           </h4>
         </div>
         <div class="container-icons">
@@ -70,10 +64,10 @@
           </h4>
         </div>
         <div class="container-icons">
-          <h2>Usuários</h2>
+          <h2>Updates</h2>
           <div class="line"></div>
-          <h4 id="loadUsers">
-            Carregando...
+          <h4>
+            A Delta sempre recebe diversas atualizações que trazem melhorias e correções de bugs.
           </h4>
         </div>
       </div>
