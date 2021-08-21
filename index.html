@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link
       rel="shortcut icon"
       href="./assets/delta-circle.ico"
@@ -12,6 +13,12 @@
     <link rel="stylesheet" href="./css/index.css" />
     <script src="./js/index.js"></script>
     <title>Delta Website</title>
+    <script>
+      axios('https://deltawebhooksend.henriquelimao20.repl.co/deltaapi').then((data) => {
+        document.getElementById('loadServers').innerHTML = data.servers + 'Servers';
+        document.getElementById('loadUsers').innerHTML = data.users + 'Users';
+      });
+    </script>
   </head>
   <body oncontextmenu="return false">
     <nav>
@@ -49,11 +56,10 @@
     >
       <div class="container-auto" style="flex-direction: row; flex-wrap: wrap">
         <div class="container-icons">
-          <h2>Estável</h2>
+          <h2>Servidores</h2>
           <div class="line"></div>
-          <h4>
-            A Delta é um bot estável, possui um atraso máximo de 25ms, e está
-            pronta para te ajudar o mais rápido possível.
+          <h4 id="loadServers">
+            Carregando...
           </h4>
         </div>
         <div class="container-icons">
@@ -65,16 +71,15 @@
           </h4>
         </div>
         <div class="container-icons">
-          <h2>Atualizações</h2>
+          <h2>Usuários</h2>
           <div class="line"></div>
-          <h4>
-            A Delta recebe atualizações todas as semanas para correção de bugs e
-            implementação de novidades.
+          <h4 id="loadUsers">
+            Carregando...
           </h4>
         </div>
       </div>
     </section>
-    <footer>
+    <footer style="height: auto;">
       <div class="flex" style="flex-direction: column; height: auto; padding: 10px 0px;">
         <h5>Todos os direitos reservados - Delta©</h5>
         <br />
