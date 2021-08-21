@@ -10,6 +10,7 @@
   overflow-x: hidden;
 
   color: inherit;
+  transition: all 0.6s;
   text-decoration: none;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
