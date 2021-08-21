@@ -14,9 +14,12 @@
     <script src="./js/index.js"></script>
     <title>Delta Website</title>
     <script>
-      axios('https://deltawebhooksend.henriquelimao20.repl.co/deltaapi').then((data) => {
-        document.getElementById('loadServers').innerHTML = data.servers + 'Servers';
-        document.getElementById('loadUsers').innerHTML = data.users + 'Users';
+      axios({
+        method: 'get',
+        url: 'https://deltawebhooksend.henriquelimao20.repl.co/deltaapi'
+      }).then((server) => {
+        document.getElementById('loadServers').innerHTML = server.data.servers + 'Servers';
+        document.getElementById('loadUsers').innerHTML = server.data.users + 'Users';
       });
     </script>
   </head>
