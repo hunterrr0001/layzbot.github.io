@@ -16,7 +16,9 @@
     <script>
       axios({
         method: 'get',
-        url: 'https://deltawebhooksend.henriquelimao20.repl.co/deltaapi'
+        url: 'https://deltawebhooksend.henriquelimao20.repl.co/deltaapi',
+        headers: {"Access-Control-Allow-Origin": "*"},
+        responseType: "json",
       }).then((server) => {
         document.getElementById('loadServers').innerHTML = server.data.servers + 'Servers';
         document.getElementById('loadUsers').innerHTML = server.data.users + 'Users';
