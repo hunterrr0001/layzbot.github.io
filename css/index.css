@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /*  IMPORT */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -10,9 +17,12 @@
   overflow-x: hidden;
 
   color: inherit;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
   transition: all 0.6s;
   text-decoration: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -28,14 +38,21 @@ body {
 
 nav {
   height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 
   background-color: #448D4C;
 }
 
 a {
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -59,10 +76,19 @@ a:hover {
   width: 100vw;
   z-index: 5;
 
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  animation: backgroundAppears forwards 1s;
+  -webkit-box-align: center;
+
+      -ms-flex-align: center;
+
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-animation: backgroundAppears forwards 1s;
+          animation: backgroundAppears forwards 1s;
 }
 
 .nav-list li {
@@ -73,25 +99,42 @@ a:hover {
 
   text-align: center;
   cursor: pointer;
-  animation: navLinkFade 3s forwards 3s;
+  -webkit-animation: navLinkFade 3s forwards 3s;
+          animation: navLinkFade 3s forwards 3s;
 }
 
 .container {
   height: 82vh;
   width: 100%;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container-auto {
   height: auto;
   width: 100%;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* OTH */
@@ -99,11 +142,14 @@ a:hover {
 .line {
   width: 50vw;
   margin: 40px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   z-index: -1;
 
   border: whitesmoke solid 1px;
-  animation: lefttoright 5s ease forwards;
+  -webkit-animation: lefttoright 5s ease forwards;
+          animation: lefttoright 5s ease forwards;
 }
 
 #slogan {
@@ -161,10 +207,21 @@ div.container-icons {
   width: 280px;
   margin: 3%;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
   border-radius: 5px;
   background-color: rgba(68, 141, 76, 0.85);
@@ -194,7 +251,8 @@ div.container-icons h4 {
   color: #161616;
   font-size: 1.3rem;
   background-color: #448D4C;
-  box-shadow: #161616 10px 10px 10px;
+  -webkit-box-shadow: #161616 10px 10px 10px;
+          box-shadow: #161616 10px 10px 10px;
 }
 
 .buttons-min {
@@ -211,7 +269,8 @@ div.container-icons h4 {
 }
 
 .buttons:hover {
-  animation: uptodown ease 3s forwards;
+  -webkit-animation: uptodown ease 3s forwards;
+          animation: uptodown ease 3s forwards;
 }
 
 /*  IMAGENS */
@@ -224,7 +283,8 @@ img.logo {
   margin-top: 2%;
 
   border-radius: 100px;
-  box-shadow: #161616 10px 10px 10px;
+  -webkit-box-shadow: #161616 10px 10px 10px;
+          box-shadow: #161616 10px 10px 10px;
 }
 
 img.logo-min {
@@ -238,11 +298,13 @@ img.logo-min {
 }
 
 img.logo:hover {
-  animation: rotate ease 2s;
+  -webkit-animation: rotate ease 2s;
+          animation: rotate ease 2s;
 }
 
 img.logo-min:hover {
-  animation: rotate ease 2s;
+  -webkit-animation: rotate ease 2s;
+          animation: rotate ease 2s;
 }
 
 /* MENU */
@@ -254,6 +316,8 @@ div.menu div.line3 {
   height: 2px;
   background: whitesmoke;
   margin: 8px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -263,9 +327,17 @@ div.menu div.line3 {
   height: 100%;
   width: 100%;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* FOOTER */
@@ -280,14 +352,35 @@ footer {
 
 /* KEYFRAME */
 
-@keyframes navLinkFade {
+@-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes backgroundAppears {
+  to {
+    background-color: #161616;
   }
 }
 
@@ -297,36 +390,83 @@ footer {
   }
 }
 
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @keyframes rotate {
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes scaled {
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
 @keyframes scaled {
   to {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes uptodown {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
 @keyframes uptodown {
   0% {
-    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
   50% {
-    transform: translateY(-15%);
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
   }
   100% {
-    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes lefttoright {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 @keyframes lefttoright {
   from {
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -334,6 +474,7 @@ footer {
 
 @media (min-width: 800px) {
   div.container-icons:hover {
-    animation: scaled ease 1s forwards;
+    -webkit-animation: scaled ease 1s forwards;
+            animation: scaled ease 1s forwards;
   }
 }
