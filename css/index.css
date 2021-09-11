@@ -47,7 +47,7 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 
-  background-color: #448D4C;
+  background-color: #f6c262;
 }
 
 a {
@@ -196,7 +196,7 @@ table tr td a {
   border-radius: 5px;
   margin-left: 3%;
 
-  color: #448D4C;
+  color: #f6c262;
   background-color: #353535;
 }
 
@@ -250,7 +250,7 @@ div.container-icons h4 {
   border: none;
   color: #161616;
   font-size: 1.3rem;
-  background-color: #448D4C;
+  background-color: #f6c262;
   -webkit-box-shadow: #161616 10px 10px 10px;
           box-shadow: #161616 10px 10px 10px;
 }
@@ -265,7 +265,7 @@ div.container-icons h4 {
   border: 2px solid #161616;
   color: #161616;
   font-size: 1rem;
-  background-color: #448D4C;
+  background-color: #f6c262;
 }
 
 .buttons:hover {
@@ -347,7 +347,7 @@ footer {
   height: 12vh;
   font-size: 18px;
 
-  background-color: #448D4C;
+  background-color: #f6c262;
 }
 
 /* KEYFRAME */
