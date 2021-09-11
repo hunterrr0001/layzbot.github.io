@@ -248,11 +248,11 @@ div.container-icons h4 {
   margin-bottom: 2rem;
 
   border: none;
-  color: #161616;
+  color: #ffffff;
   font-size: 1.3rem;
   background-color: #3b3574;
-  -webkit-box-shadow: #161616 10px 10px 10px;
-          box-shadow: #161616 10px 10px 10px;
+  -webkit-box-shadow: #ffffff 10px 10px 10px;
+          box-shadow: #ffffff 10px 10px 10px;
 }
 
 .buttons-min {
@@ -262,8 +262,8 @@ div.container-icons h4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 
-  border: 2px solid #161616;
-  color: #161616;
+  border: 2px solid #ffffff;
+  color: #ffffff;
   font-size: 1rem;
   background-color: #3b3574;
 }
